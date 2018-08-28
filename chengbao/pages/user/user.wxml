@@ -1,0 +1,30 @@
+
+
+<view class="container">
+
+
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      
+      <view class="page-section">
+        <view class="page-section-title">管理员登陆</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+            <input class="weui-input" name="user" placeholder="请输入用户名" value='{{userval}}' />
+              <input class="weui-input" name="password" placeholder="请输入密码" value='{{passwordval}}'/>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="btn-area">
+     <!--formType="submit"-->
+        <button type="primary" formType="submit" >登陆</button>
+        
+      </view>
+    </form>
+  </view>
+
+  
+</view>

@@ -1,0 +1,24 @@
+
+<view>
+	<view class="userinfo"> 请输入要添加书的信息</view>
+  <form bindsubmit="formSubmit" >
+	<view class="profile-wrapper" catchtap="loadProfile">
+		<block wx:for="{{myProfile}}" >
+			<view class="profile" >
+				<view class="profile-item" id="{{item.id}}"> {{item.desc}} </view>
+				<input name="{{item.id}}"  placeholder="请输入{{item.desc}}" />
+			</view>
+		</block>
+    <view class="profile" >
+				<view class="profile-item" id="{{name}}"> {{myisbn.name}} </view>
+				<input  name="{{myisbn.name}}" placeholder="请输入{{myisbn.name}}" value='{{myisbn.isbn}}'/>
+			</view>
+	</view>
+  <button class="btn-quit" formType="submit">提交信息</button>		
+</form>
+
+</view>
+<button class="btn-quit" bindtap='d2camera'>扫描图书条形码获取ISBN号</button>
+
+
+    

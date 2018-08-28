@@ -1,0 +1,55 @@
+@import"../style/weui.wxss";
+
+.all{
+ padding: 0;
+  margin: 0;
+}
+
+ /* 展示窗口 */
+
+.main-wrapper {
+  margin-top: 50rpx;
+}
+
+.book-get{
+  height: 80rpx;
+  background: white;
+  color: #09BB07;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  background-color: white;
+  height: 280rpx;
+}
+
+.book-image {
+  flex: 0 0 32%;
+  /* box-sizing: border-box;
+  min-height: 280rpx; */
+  height: 280rpx;
+}
+
+.book-image image {
+  margin-top: 4rpx;
+  height: 272rpx;
+  width: 272rpx;
+}
+
+.book-info {
+  background-color: white;
+  flex: 0 0 66%;
+  margin-left: 20rpx;
+}
+
+
+
+.line {
+  width: 100%;
+  height: 2rpx;
+  background:#808080;
+}

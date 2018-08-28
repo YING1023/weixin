@@ -1,0 +1,14 @@
+<view class="container">
+  <image wx:if="11" class="background" src="../../img/万历五十年.jpg" mode="aspectFill"/>
+
+  
+    <view class="meta">
+      <image class="poster" src="../../img/万历五十年.jpg" mode="aspectFit"/>
+    </view>
+   <text class="title">万历五十年</text>
+     <text class="info">作者：55</text>
+    <text class="info">价格：66</text>
+    <text class="info">出版社：77</text>
+    <text class="info">ISBN：77</text>
+</view>
+<button class='ran-btn'>借阅</button>

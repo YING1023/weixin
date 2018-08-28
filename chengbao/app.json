@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/angle/angle",
+    "pages/personal/personal",
+    "pages/borrow/borrow",
+    "pages/detail/detail",
+    "pages/ky/ky",
+    "pages/mygive/mygive",
+    "pages/search/search",
+    "pages/test/test",
+    "pages/user/user",
+    "pages/user_book/user_book"
+
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#eee",
+    "navigationBarBackgroundColor": "#09BB07",
+    "navigationBarTitleText": "漂流角",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": { 
+    "color": "#231815",
+    "selectedColor": "#09BB07",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "搜索",
+        "iconPath": "img/search.png",
+        "selectedIconPath": "img/search1.png"
+      },
+      {
+        "pagePath": "pages/angle/angle",
+        "text": "漂流角",
+        "iconPath": "img/angle.png",
+        "selectedIconPath": "img/angle1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "img/personal.png",
+        "selectedIconPath": "img/personal1.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+
+<view class="all">
+  <!--view class="search">
+   <view class="inputview">
+    <input class="page-section"  placeholder="请输入书名"/>
+    </view>    
+    <view class="btn">
+  	<button type="default" class="btn-quit" plain="green" > 搜索 </button>
+    </view>
+  </view-->
+
+
+<view class="page">
+   
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+              <!--bindtap="localsearch""tosearch"-->    
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="tosearch">搜索</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            
+        </view>
+    </view>
+</view>
+
+
+<!--搜索-->
+
+  
+
+  <!--view class='book-get'>   图书推荐</view-->
+  
+  
+   <!--navigator url='../detail/detail'>
+    <view class="book-list"  >
+      <view class="book-image">
+        <image src="../../img/万历五十年.jpg" mode="aspectFit"></image>
+      </view>
+      <view class="book-info">
+        <view >
+          <view class="book-font">万历十五年</view>
+          <view class="">简介</view>
+        </view>
+      </view>
+    </view>
+   
+    <view class="line"></view>
+    
+</navigator-->
+<!--zan
+<doc-page title="图书推荐" without-padding>
+
+<navigator url='../detail/detail'>
+  <zan-panel title="万历五十年">
+    <zan-card
+      card-class="test-card"
+      thumb="../../img/万历五十年.jpg"
+      useThumbSlot="{{ true }}"
+      useDetailSlot="{{ true }}"
+    >
+      <!-- 右侧详情
+      <view slot="detail-slot" class="zan-card__detail">
+        <view>作者：{{author}}</view>
+        <view>出版社：{{ into}}</view>
+        <view>ISBN：{{isbn}}</view>
+      </view>
+    </zan-card>
+  </zan-panel>
+  </navigator>
+</doc-page-->
+
+<!--zan-->
+
+<doc-page title="图书推荐" without-padding>
+<block wx:for="{{alldata}}">
+
+<navigator url='../test/test?book={{item.book}}' >
+  <zan-panel title="{{item.book}}">
+    <zan-card
+      card-class="test-card"
+      thumb="{{item.bookimg}}"
+      useThumbSlot="{{ true }}"
+      useDetailSlot="{{ true }}"
+       
+       >
+      
+      <view slot="detail-slot" class="zan-card__detail" value="{{book}}" bindtap='detail'>
+        <view>作者：{{item.author}}</view>
+        <view>出版社：{{item.intro}}</view>
+        <view >ISBN：{{item.isbn}}</view>
+        
+      </view>
+    </zan-card>
+  </zan-panel>
+   </navigator>
+  </block>
+</doc-page>
+
+
+
+
+</view>
